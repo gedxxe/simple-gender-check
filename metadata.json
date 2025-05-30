@@ -1,0 +1,8 @@
+{
+  "name": "Face Gender Detector",
+  "description": "An AI-powered application to detect the perceived gender of faces in images using the Gemini API. Users can upload an image or use their device camera.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "prompt": ""
+}
