@@ -1,21 +1,11 @@
 {
   "name": "face-gender-detector",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react-dom": "^19.1.0",
-    "react": "^19.1.0",
-    "@google/genai": "^1.2.0"
+    "build": "esbuild index.tsx --bundle --outfile=dist/bundle.js --jsx=react-jsx --platform=browser --format=esm --define:process.env.API_KEY=\\\"$API_KEY\\\" --external:react --external:react-dom --external:@google/genai"
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
-    "typescript": "~5.7.2",
-    "vite": "^6.2.0"
+    "esbuild": "^0.20.0"
   }
 }
