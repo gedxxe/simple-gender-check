@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "An AI-powered application to detect the perceived gender of faces in images.",
   "scripts": {
-    "build": "esbuild index.tsx --bundle --outfile=dist/bundle.js --jsx=automatic --platform=browser --format=esm --define:process.env.API_KEY=\\\"$API_KEY\\\" --external:react --external:react-dom --external:@google/genai",
-    "dev": "esbuild index.tsx --bundle --outfile=dist/bundle.js --jsx=automatic --platform=browser --format=esm --servedir=. --define:process.env.API_KEY=\\\"YOUR_LOCAL_DEV_API_KEY_IF_NEEDED\\\" --external:react --external:react-dom --external:@google/genai"
+    "build": "esbuild index.tsx --bundle --outfile=bundle.js --jsx=automatic --platform=browser --format=esm --define:process.env.API_KEY=\\\"$API_KEY\\\" --external:react --external:react-dom --external:@google/genai",
+    "dev": "esbuild index.tsx --bundle --outfile=bundle.js --jsx=automatic --platform=browser --format=esm --servedir=. --define:process.env.API_KEY=\\\"YOUR_LOCAL_DEV_API_KEY_IF_NEEDED\\\" --external:react --external:react-dom --external:@google/genai"
   },
   "devDependencies": {
     "esbuild": "^0.20.0"
